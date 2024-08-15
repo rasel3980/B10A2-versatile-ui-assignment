@@ -241,13 +241,13 @@
     /* margin-top: -43px; */
 }
 .habit{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .title-2{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 3rem;
 }
@@ -256,6 +256,7 @@
     justify-content: center;
     text-align: center;
     padding: 0px 28%;
+    color: rgba(255, 255, 255, 0.5);
 }
 .habit-img{
     display: flex;
@@ -386,7 +387,8 @@ table{
     width: 260px;
     height: 48px;
     border-radius: 8px;
-    color: rgba(255, 255, 255, 0.6);
+    /* color: black; */
+    /* color: rgba(255, 255, 255, 0.6); */
 }
 .input-bg1{
     font-size: 16px;
@@ -418,7 +420,7 @@ table{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    
+    /* color: rgba(255, 255, 255, 0.6); */
     /* grid-template-rows: repeat(2,1fr); */
 }
 
