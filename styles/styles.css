@@ -74,10 +74,11 @@
 .container{
     display: flex;
     color: white;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .title-1{
     display: flex;
+    display: block;
     /* justify-content: center; */
     width: 920px;
     height: 282px;
@@ -106,6 +107,7 @@
 }
 .border{
     /* margin-bottom: 100px; */
+    display: block;
     border: 1px solid red;
 }
 .img1{
@@ -184,6 +186,9 @@
     padding-left: 10px;
     /* margin-top: -2px; */
     /* padding-top: 20px; */
+}
+.count>p{
+    color: rgba(239, 237, 232, 0.65);
 }
 .box-description{
     margin-top: -20px;
@@ -341,11 +346,11 @@
     background: rgb(34, 34, 34);
     color: wheat;
 }
-table{
-    margin-top: -30px;
-}
 .table{
-    margin-left: 150px;
+   display: flex; 
+   width: 85%;
+   margin: 0px auto;
+   /* border: 2px solid yellow; */
 }
 .table-head{
     color: rgb(255, 255, 255);
@@ -367,10 +372,11 @@ table{
     border: 1px solid teal;
 }
 .calculate{
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
     width: 577px;
     height: 386px; 
-    margin-left: 100px;
+    /* margin: 0px auto; */
+    margin-left: 200px;
 }
 .calculate>h2{
     font-size: 28px;
@@ -380,9 +386,10 @@ table{
 .description-bmi{
     font-size: 14px;
     font-weight: 400;
+    border: 2px solid yellow;
     color: rgba(255, 255, 255, 0.5);
 }
-.input-bg{
+.input-value{
     font-size: 16px;
     width: 260px;
     height: 48px;
@@ -390,7 +397,7 @@ table{
     /* color: black; */
     /* color: rgba(255, 255, 255, 0.6); */
 }
-.input-bg1{
+.input-arrow{
     font-size: 16px;
     width: 270px;
     height: 48px;
@@ -399,7 +406,7 @@ table{
     /* color: rgba(255, 255, 255, 0.6); */
     
 }
-.input-bg2{
+.input-arrow2{
     font-size: 16px;
     width: 555px;
     height: 48px;
@@ -420,6 +427,8 @@ table{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    width: 700px;
+    height: 180px;
     /* color: rgba(255, 255, 255, 0.6); */
     /* grid-template-rows: repeat(2,1fr); */
 }
@@ -512,7 +521,7 @@ input{
 }
 .trainer{
     /* border: 2px solid yellow; */
-
+    position: relative;
     display: flex;
     /* justify-content:space-evenly; */
     align-items: center;
@@ -520,6 +529,16 @@ input{
     padding: 10px;
     /* margin: 20px 0px; */
     
+}
+.trainer-identity{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    color: white;
+}
+.trainer-identity>p{
+    margin-top: -20px;
+    color: rgb(243, 221, 221);
 }
 .size{
     /* border: 1px solid greenyellow; */
@@ -573,6 +592,16 @@ footer{
     /* width: 1000px; */
     /* border: 1px solid red; */
 }
+.footer-div{
+    display: flex;
+}
+.navbar-div{
+    display: flex;
+    gap: 50px;
+}
+.ul>li{
+    margin-left: -40px;
+}
 .div1,.div2{
     width: 200px;
     /* border: 1px solid red; */
@@ -601,5 +630,132 @@ footer{
     padding-top: 25px;
     font-size: 20px;
     color:rgba(255, 255, 255, 0.5);
+}
+
+/* small device responsive */
+@media screen and (max-width:576px){
+    
+    .habit-img{
+        flex-direction: column;
+    }
+    .img{
+        margin-left: 100px;
+    }
+    .runner{
+        flex-direction: column;
+    }
+    .runner-img{
+        width: 100%;
+        margin-left: 50px;
+    }
+    .btn3{
+        color: white;
+        font-size: 28px;
+        font-weight: 400;
+        background: rgba(230, 83, 60, 1);
+        /* margin-left: 150px; */
+        border-radius: 40px;
+        height: 70px;
+        width: 350px;
+    }
+    .clc-title{
+        width: 500px;
+        margin-left: 30px;
+        margin-top: -20px;
+    }
+    .clc-title>h1{
+        /* padding-top: -10px; */
+    }
+    .description-clc{
+        width: 420px;
+        font-size: 22px;
+        padding-top: 20px;
+
+    }
+    .table{
+        flex-direction: column;
+        padding-bottom: 140px;
+    }
+    .calculate{
+        margin: 0px;
+    }
+    .input-form{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 600px;
+        height: 150px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+    .input-value{
+        font-size: 16px;
+        width: 200px;
+        height: 44px;
+        border-radius: 8px;
+    }
+    .input-arrow{
+        width: 210px;
+        
+    }
+    .input-arrow2{
+        width: 433px;
+        margin-top: 5px;
+    }
+    .description-bmi{
+        width: 400px;
+        font-size: 22px;
+    }
+    .btn4{
+        font-size: 28px;
+        font-weight: 400;
+        height: 60px;
+        width: 280px;
+
+    }
+    .meet-div{
+        width: 400px;
+    }
+    .grid-container{
+        
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 400px;
+        height: 100%;
+    }
+    .trainer{
+        margin: 0px auto;
+    }
+    .footer-container{
+        /* margin-top: 300px; */
+        margin-left: 50px;
+        width: 300px;
+        height: 350px;
+        border: 1px solid red;
+    }
+    .footer-description{
+        width: 300px;
+        font-size: 22px;
+    }
+    .navbar-div{
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .ul{
+        margin-left: -30px;
+    }
+    .ul>li{
+        font-size: 2rem;
+        width: 300px;
+        /* border: 1px solid red; */
+    }
+    .the-end{
+        width: 100%;
+        font-weight: 400;
+        margin-left: 5px;
+        /* border: 1px solid red; */
+    }
 }
 
